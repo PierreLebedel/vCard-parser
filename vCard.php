@@ -183,7 +183,7 @@
 					if ((strpos($Key, 'agent') === 0) && (stripos($Value, 'begin:vcard') !== false))
 					{
 						$ClassName = get_class($this);
-						$Value = new $ClassName(false, str_replace('-wrap-', "\n", $Value));
+						$Value = new $ClassName(false, str_replace('-wrap-', "\n", $Value, $this -> Options));
 						if (!isset($this -> Data[$Key]))
 						{
 							$this -> Data[$Key] = array();
