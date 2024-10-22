@@ -137,7 +137,7 @@
 					$SinglevCardRawData = 'BEGIN:VCARD'."\n".$SinglevCardRawData;
 
 					$ClassName = get_class($this);
-					$this -> Data[] = new $ClassName(false, $SinglevCardRawData);
+					$this -> Data[] = new $ClassName(false, $SinglevCardRawData, $this -> Options);
 				}
 			}
 			else
